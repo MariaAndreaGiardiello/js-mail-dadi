@@ -14,15 +14,30 @@ let computer = randomNumberComp;
 console.log(computer);
 
 // 5. dichiaro costante per utilizzare box per inserimento immagine vincitore/perdente
-const box = document.querySelector('.box')
-console.log(box)
+const boxWinner = document.querySelector('.box-winner')
+console.log(boxWinner)
+
+const boxLoser = document.querySelector('.box-loser')
+console.log(boxLoser)
 // 5.1 Creo ciclo per stabilire il vincitore.
 if (user > computer) {
-    box.classList.add('winner');
+    boxWinner.classList.add('winner');
     alert("Complimenti hai vinto!!")
 } else if (user === computer) {
     alert("Stesso numero, riprova!!")
 } else if (user < computer) {
     alert("Mi dispiace hai perso!!")
-    box.classList.add('loser');
+    boxLoser.classList.add('loser');
 }
+
+// 6. dichiaro costante per box dove mostrare numero estratto x user
+const randomTextUser = document.querySelector('.random-number-user');
+console.log(randomTextUser);
+randomTextUser.innerText = randomNumberUser;
+// 6. dichiaro costante per box dove mostrare numero estratto x computer
+const randomTextComp = document.querySelector('.random-number-comp');
+console.log(randomTextComp);
+randomTextComp.innerText = randomNumberComp;
+
+
+

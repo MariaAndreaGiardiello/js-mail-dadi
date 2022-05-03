@@ -1,0 +1,52 @@
+/*--------------------
+    RESET
+--------------------*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*--------------------
+    COMMON
+--------------------*/
+.container{
+    width: 1000px;
+    height: 500px;
+    background-color: azure;
+    text-align: center;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+/*--------------------
+    THYPO
+--------------------*/
+h1{
+    color: darkcyan;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h3{
+    color: lightseagreen;
+    margin: auto;
+    padding: 100px 0;
+}

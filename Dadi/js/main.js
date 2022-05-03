@@ -13,11 +13,16 @@ const randomNumberComp = Math.floor(Math.random() * 6) + 1;
 let computer = randomNumberComp;
 console.log(computer);
 
-// 4. Creo ciclo per stabilire il vincitore.
+// 5. dichiaro costante per utilizzare box per inserimento immagine vincitore/perdente
+const box = document.querySelector('.box')
+console.log(box)
+// 5.1 Creo ciclo per stabilire il vincitore.
 if (user > computer) {
-    alert("Complimenti user hai vinto!!")
+    box.classList.add('winner');
+    alert("Complimenti hai vinto!!")
 } else if (user === computer) {
     alert("Stesso numero, riprova!!")
 } else if (user < computer) {
-    alert("Complimenti hai vinto!!")
+    alert("Mi dispiace hai perso!!")
+    box.classList.add('loser');
 }

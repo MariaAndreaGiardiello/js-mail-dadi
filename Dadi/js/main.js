@@ -19,5 +19,5 @@ if (user > computer) {
 } else if (user === computer) {
     alert("Stesso numero, riprova!!")
 } else if (user < computer) {
-    alert("Complimenti computer hai vinto!!")
+    alert("Complimenti hai vinto!!")
 }
